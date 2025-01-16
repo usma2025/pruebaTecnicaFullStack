@@ -6,7 +6,6 @@ import SearchBar from "../components/SearchBar";
 import MapComponent from "../components/MapComponent";
 import "./globals.css";
 
-const GOOGLE_MAPS_API_KEY = "AIzaSyChyLiv8_21akylU0_FjKy9K0JzoaD-V_w";
 
 const HomePage = () => {
   const [selectedLocation, setSelectedLocation] = useState(null);
@@ -39,7 +38,7 @@ const HomePage = () => {
   };
 
   return (
-    <LoadScript googleMapsApiKey={GOOGLE_MAPS_API_KEY} libraries={["places"]}>
+    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY} libraries={["places"]}>
       <div className="container">
         <h1>Buscador de Ubicaciones</h1>
         <SearchBar
