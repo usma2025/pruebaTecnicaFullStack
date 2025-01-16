@@ -32,7 +32,7 @@ Const GOOGLE_MAPS_API_KEY = 'API_KEY';
 
 1. Clonar el repositorio con:
 ```bash
-git clone https://github.com/usma2025/nombreRepositorio.git
+git clone https://github.com/usma2025/pruebaTecnicaFullStack.git
 ```
 2. Instalar dependencias:
 ```bash
